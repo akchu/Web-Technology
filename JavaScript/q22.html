@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>MY CALCULATOR</title>
+
+</head>
+<body>
+<center>
+<form name= calculator>
+<h1><U><I>CALCULATOR</I></U></H1>
+<table border="1" cellpadding="1" bordercolor="green" bgcolor="purple" cellspacing="2" width="250">
+<tr colspan="4"><td>
+<input type="text" name="ans" size="35">
+</td></tr>
+</table>
+
+
+<table border="1" cellpadding="1" bordercolor="green" bgcolor="purple" cellspacing="2" width="250">
+
+<tr>
+<th><input type="button" value=" 7 " id="seven" onClick="document.calculator.ans.value+='7'"></th>
+<th><input type="button" value="8" id="eight" onClick="document.calculator.ans.value+='8'"></th>
+<th><input type="button" value="9" id="nine" onClick="document.calculator.ans.value+='9'"></th>
+<th><input type="button" value="/" id="divide" onClick="document.calculator.ans.value+='/'"></th>
+</tr>
+<tr>
+<th><input type="button" value="4" id="four" onClick="document.calculator.ans.value+='4'"></th>
+<th><input type="button" value="5" id="five" onClick="document.calculator.ans.value+='5'" ></th>
+<th><input type="button" value="6" id="six" onClick="document.calculator.ans.value+='6'"></th>
+<th><input type="button" value="*" id="multiply" onClick="document.calculator.ans.value+='*'"></th>
+</tr>
+<tr>
+<th><input type="button" value="1" id="one" onClick="document.calculator.ans.value+='1'"></th>
+<th><input type="button" value="2" id="two" onClick="document.calculator.ans.value+='2'"></th>
+<th><input type="button" value="3" id="three" onClick="document.calculator.ans.value+='3'"></th>
+<th><input type="button" value="-" id="minus" onClick="document.calculator.ans.value+='-'"></th>
+</tr>
+<tr>
+<th><input type="button" value="C" id="clear" onClick="document.calculator.ans.value=' '"></th>
+<th><input type="button" value="0" id="zero" onClick="document.calculator.ans.value+='0'"></th>
+<th><input type="button" value="=" id="equal" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"></th>
+<th><input type="button" value="+" id="plus" onClick="document.calculator.ans.value+='+'"></th>
+</tr>
+</table>
+
+</form>
+</center>
+</body>
+</html>

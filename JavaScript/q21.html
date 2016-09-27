@@ -1,0 +1,40 @@
+<html>
+<head>
+<script>
+function compare()
+{
+
+if(f1.country.value==f1.capital.value)
+alert("Right answer");
+else
+alert("Incorrect ans,Right answer is:"+f1.country.value);
+
+}
+</script>
+</head>
+<body>
+<p>10:07 PM 26-4-16</p>
+<form name="f1">
+<center>
+<select name="country" size=5>
+<option value="New Delhi">India</option>
+<option value="Tokyo">Japan</option>
+<option value="Bejing">China</option>
+<option value="WD">America</option>
+<option value="Sydeny">Australia</option>
+</select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<select name="capital" size=5>
+<option value="Sydney">Sydeny</option>
+<option value="New Delhi">New Delhi</option>
+<option value="WD">WD</option>
+<option value="Tokyo">Tokyo</option>
+<option value="Bejing">Bejing</option>
+</select><br>
+<pre>
+
+
+<input type="button" value="Compare" onclick="compare();">
+</pre>
+</form>
+</body>
+</html>

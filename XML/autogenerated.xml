@@ -1,0 +1,15 @@
+<?xml Version = 1.0 ?>
+ <Employee> 
+<deptno> 1 </deptno> 
+<deptname> HR </deptname>
+<location> Delhi </location>
+<deptno> 2 </deptno> 
+<deptname> Sale </deptname>
+<location> Dehradun </location>
+<deptno> 19 </deptno> 
+<deptname> SALES </deptname>
+<location>  </location>
+<deptno> 21 </deptno> 
+<deptname> sale </deptname>
+<location>  </location>
+</Employee>

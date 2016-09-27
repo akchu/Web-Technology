@@ -1,0 +1,19 @@
+<html>
+     <head><title>invert filter</title>
+     <script>
+          function change()
+          {
+             document.getElementById('img').src="Koala.jpg";
+           }
+           
+           function rechange()
+          {
+             document.getElementById('img').src="sky.jpg";
+           }  
+            
+     </script>
+<body>
+<center><h4>Invert filter to an image if the user moves the mouse over it<h4><center>
+           <img id="img" src="koala.jpg" onMouseOver="change( );" onMouseOut="rechange();">
+     </body>
+</html>

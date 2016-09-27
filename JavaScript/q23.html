@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Self modifying</title>
+<script>
+  var i;
+ function update()
+ {    if(i==1) 
+         document.bgColor="pink";
+      else if(i==2)
+        document.bgColor="lime";
+      else if(i==3)
+        document.bgColor="orangered";
+      else { i=0;
+	 document.bgColor="grey";
+             } i++;
+	setTimeout("update()",5000);
+}
+</script>
+</head>
+<body onLoad="update()">
+<center><h3>Self modifying webpage color itself after every five seconds<h4></center>
+</body>
+</html>

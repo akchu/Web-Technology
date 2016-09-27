@@ -1,0 +1,38 @@
+<html>
+ <head><title>Credit Card Validation</title>
+ <script>
+  function validCard()
+       {  var selin = document.getElementById("cardtype").selectedIndex;
+          var cardnum = document.getElementById("cardno").value;
+          var regex;
+          if(cardnum=="")
+	alert("Please Enter Card Number");
+         else
+          {  if(selin==0)
+	regex=/^5[1-5][0-9]{14}$/;
+            else if(selin==1)
+	 regex=/^4[0-9]{12,15}$/;
+            else 
+	regex=/^3[47][0-9]{13}$/;
+            if(regex.test(cardnum))
+	alert("Card Accepted");
+            else
+	 alert("Wrong Card Number!! Please Try Again..");
+         }
+      }
+</script></head>
+<body bgColor=grey>
+<center><h2> Credit Card Validation  </h2><br><br>
+<form>
+  <b>Card Type</b> 
+  <select id=cardtype>
+   <option>Master Card
+   <option>Visa
+   <option>American Express
+  </select><br><br>
+  <b>Card No</b> 
+   <input type=text id=cardno></input><br><br>
+   <input type=button value="Check" onclick="validCard()">
+</form></center><br>
+</body>
+</html>

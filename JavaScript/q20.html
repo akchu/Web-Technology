@@ -1,0 +1,44 @@
+<html>
+<head><title> Email Password Example</title>
+ <script>
+       var Re_EMAIL =/^(\w+[\-\.])*\w+@(\w+\.)+[A-Za-z]+$/;
+       var Re_PASSWORD =/^[A-Za-z\d]{6,8}$/;
+ function validate(form)
+ { 
+     
+       var vemail=document.f1.txtemail.value;
+       var vpassword=document.f1.txtpassword.value;
+      if(vemail=="" || vpassword=="")
+          {
+                    alert("PASSWORD and EMAIL is MENDITORY");
+          } 
+     
+     else if(!Re_EMAIL.test(vemail) || !Re_PASSWORD.test(vpassword) )
+           { 
+                alert("ENTER VAILD EMAIL ADDRESS or PASSWORD");
+                     
+           }	
+      else if(vemail=="akshay@gmail.com" && vpassword=="1234567")
+         { 
+            alert("WELCOME Akshay Bisht");
+         }
+        else
+           alert("Sorry User not found");
+  }
+ </script>
+</head>
+<body bgcolor="grey">
+<center>
+<h1>Sample Login Form</h1>
+<legend>Email Verification</legend>
+<fieldset>
+<form name="f1">
+  Email:<input type="text" name="txtemail" size="30" placeholder="sample@gmail.com"><br/><br/>
+  Password:<input type="password" name="txtpassword" size="20" placeholder="6 to 10 alphanumcharcters"><br/>
+<input type="submit" name="submit" onclick="validate();"></input>
+<input type="Reset" name="Reset Form">
+</center>
+</form>
+</fieldset>
+</body>
+</html>

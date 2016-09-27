@@ -1,0 +1,84 @@
+<html>
+<head>
+<script>
+survey=[];
+survey[0]=[0,0,0,0];
+survey[1]=[0,0,0,0];
+survey[2]=[0,0,0,0];
+survey[3]=[0,0,0,0];
+function cal()
+{
+     n=document.form1.city.selectedIndex
+    m=document.form1.car.selectedIndex
+   switch(n)
+   {
+      case 0:	
+			survey[0][m]++;
+			break;
+	  case 1 :
+			survey[1][m]++;
+			break;
+	  case 2:
+			survey[2][m]++;
+			break;
+	  case 3 :
+			survey[3][m]++;
+			break;
+	}
+}
+function show()
+{ 
+                document.writeln("<center><h1>Car Survey Report</h1></center>");  
+        document.write("<center><table border=1 width=50% bgcolor='silver' bordercolor='#000000'");
+                document.write("<tr align='center'> <th> </th> <th> Maruti-K10 </th> <th> Zen-Astelo </th> <th> Wagnor </th> <th> Maruti-SX4 </th> </tr>");
+                
+                    for(var i=0;i<4;i++)
+                    {
+                       document.write("<tr align='center'>");
+                        if(i==0)
+                           document.write("<td> Delhi </td>");
+                        if(i==1)
+                            document.write("<td> Mumbai </td>");
+                        if(i==2)
+                            document.write("<td> Chennai </td>");
+                        if(i==3)
+                            document.write("<td>Kolkatta </td>");
+                            
+                            for(var k=0;k<4;k++)
+                            {
+                                document.write("<td>");
+                                document.write(survey[i][k]);
+                                document.write("</td>");
+                            }
+							document.write("</tr>");
+					}
+					document.write("</table>");
+                            
+}
+</script>
+</head>
+<body>
+<center>
+<h1> Car Survey </h1>
+<form name=form1>
+<b>Select City</b>
+<select name="city" size="4">
+	<option value="Delhi">Delhi
+	<option  value="Mumbai">Mumbai
+	<option value="Chennai">Chennai
+	<option value="Kolkatta">Kolkatta
+</select>&nbsp&nbsp&nbsp
+<b>Select Car Model</b>
+<select name="car" size="4">
+	<option value="Maruti-K10">Maruti-K10
+	<option  value="Zen-Astelo">Zen-Astelo
+	<option value="Wagnor">Wagnor
+	<option value="Maruti-SX4">Maruti-SX4
+</select>&nbsp&nbsp&nbsp
+<input type="button" onClick=cal() value="enter"><BR><BR>
+<input type="button" onClick=show() value="show summary"><BR><BR>
+</form>
+
+</center>
+</body>
+</html>
