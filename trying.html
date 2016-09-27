@@ -1,0 +1,63 @@
+<html>
+<head>
+<script type="text/javascript">
+                    function add_number() {
+               
+                var f = parseInt(document.getElementById("Text1").value);
+                var s = parseInt(document.getElementById("Text2").value);
+				var y=document.getElementById("lis").selectedIndex;
+                if(y==0)
+				{
+				var result = f + s;
+     
+                document.getElementById("txtresult").value = result;
+				}
+				
+				if(y==1)
+				{
+				var result = f - s;
+     
+                document.getElementById("txtresult").value = result;
+				}
+				
+				if(y==2)
+				{
+				var result = f * s;
+     
+                document.getElementById("txtresult").value = result;
+				}
+				
+				if(y==3)
+				{
+				var result = f / s;
+     
+                document.getElementById("txtresult").value = result;
+				}
+			}
+        </script>
+		</head>
+<body>
+Enter First Number :
+<br>
+<input type="text" id="Text1" name="TextBox1">
+<br>
+
+<select name="s1" id="lis" size="1" value="-1">
+            <option value="0">+
+            <option value="1">-
+            <option value="2">*
+            <option value="3">/
+            
+      </select>
+	  
+	  
+<br>Enter Second Number :
+<br>
+<input type="text" id="Text2" name="TextBox2">
+<br>Result :
+<br>
+<input type="text" id="txtresult" name="TextBox3">
+<br>
+<input type="button" name="clickbtn" value="Display Result" onclick="add_number()">
+		</body>
+		</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Self modifying</title>
+<script>
+  i=1;
+ function update()
+ {    if(i==1) 
+         document.body.style.backgroundImage = "url('Images/bg.jpg')";
+		 else if(i==2)
+        document.body.style.backgroundImage = "url('Images/bg2.jpg')";
+      else if(i==3)
+        document.body.style.backgroundImage = "url('Images/bg3.jpg')";
+      else { i=0;
+	 document.body.style.backgroundImage = "url('CSS/bfbc2.jpg')";
+             } i++;
+	setTimeout("update()",2000);
+}
+</script>
+</head>
+<body onLoad="update()">
+<center><h3>Self modifying webpage color itself after every five seconds<h4></center>
+</body>
+</html>
