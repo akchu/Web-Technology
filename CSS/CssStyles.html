@@ -1,0 +1,56 @@
+<HTML>
+    <HEAD>
+        <TITLE>Demonstration of different css Styles</TITLE>
+        <STYLE>
+            .back
+            {
+                background-image:url(class.png);
+                background-repeat: repeat-y;
+                font-family: sans-serif;
+            }
+            
+            .txtbg
+            {
+                background-image: url(sky.jpg);
+				font-size:15px;
+				color:white;
+                font-family: cursive;
+            }
+            a:link
+            {
+               color:red;
+               text-decoration:none;
+            }
+            a:active
+            {
+                color:green;
+                text-decoration:none;
+            }
+            a:visited
+            {
+                color:grey;
+                text-decoration:none;
+            }
+            a:hover
+            {
+                color:blue;
+                text-decoration:underline;
+                cursor: url(Cross.png), auto;
+            }
+        </STYLE>
+    </HEAD>
+    <BODY class="back">
+	<P ALIGN=RIGHT>09:30 PM 22-03-2016</P>
+        <CENTER><b>Web Page Using CSS</b></CENTER>
+        <p class="txtbg">HTML5 is a markup language, has been come into existence around January 2008. The two major organizations are involved in developing of HTML5 since its initial time. One is W3C (World Wide Web Consortium) and the other one is WHATWG (Web Hypertext Application Technology Working Group). According to these organizations, they have been working on the HTML5 since initial time. So HTML5 language is still under development. There is more about to come yet in HTML5.</p>
+        </p>
+        <CENTER><a href="#register" ><H2>Register</H2></a>
+        <div style="position:relative; font-size:50px; z-index:2; color:blue; ">LAYER 1</div>
+        <div style="position: relative; font-size: 80px; color:red; top:-50; z-index:1;">LAYER 2</div>
+  
+    
+        <div style="position: relative; font-size: 50px; color:blue; z-index:1;">LAYER 1</div>
+        <div style="position:relative; font-size:80px; top:-50; z-index:2; color:red; ">LAYER 2</div>
+        </CENTER>
+    </BODY>
+</HTML>

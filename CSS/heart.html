@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<title>Heart Animation Demonstration</title>
+<style>
+#hrt{
+    left: 300px;
+    right:300px;
+	position:absolute;
+	animation:resize 1s alternate ease-in-out infinite;
+	}
+#h:hover
+	{
+	animation:resize 1s alternate ease-in-out infinite;
+	}
+@keyframes resize{
+0% {
+	height:220px;
+	width:220px;
+	opacity:1;
+	}
+25% {
+	height:240px;
+	width:240px;
+	opacity:0.7;
+	}
+50% {
+	height:260px;
+	width:260px;
+	opacity:0.5;
+	}
+75% {
+	height:280px;
+	width:280px;
+	opacity:0.3;
+	}
+100%{
+	height:220px;
+	width:220px;	
+	opacity:1;
+	}
+}
+
+</style>
+</head>
+<body>
+<P ALIGN=RIGHT>08:46 PM 23-03-2016</P>
+<CENTER><B>DEMONSTRATION OF ELEMENTS CHANGING STYLE</B></CENTER>
+<img id="h" src="heart.png" width=200px height=200px> 
+<img id="hrt" src="heart.png" width=200px height=200px> 
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>Transition</title>
+</head>
+<style>
+	div
+	{
+		background-color:white;
+		background-attachment:fixed;
+		color:black;
+		width:150px;
+		height:100px;
+		border:2px solid white;
+		text-align:center;
+	}
+	
+	#b1
+	{
+		transition-property:all;
+		transition-duration:1s;
+		transition-delay:0s;
+		transition-timing-function:ease-out;
+	}
+	
+	#b2
+	{
+		transition-property:all;
+		transition-duration:1s;
+		transition-delay:0s;
+		transition-timing-function:ease-in;
+	}
+	
+	#b3
+	{
+		transition-property:all;
+		transition-duration:5.2s;
+		transition-delay:0s;
+		transition-timing-function:ease-in;
+	}
+	
+	#b4
+	{
+		transition: all 9.5s 0s ease-in-out;
+	}
+	
+	div:hover
+	{
+		background-color:black;
+		width:250px;
+		color:white;
+	}
+	
+	.bg
+	{
+		background-color:grey;
+	}
+	</style>
+
+	<BODY class="bg">
+	 <P ALIGN=RIGHT>10:12 PM 21-03-2016</P>
+	<center><h1>Demonstration of Transition Effect</h1></center>
+	<div id="b1">
+	1 second
+	</div>
+	<br><br>
+	<div id="b2">
+	1.5 second
+	</div>
+	<br><br>
+	<div id="b3">
+	2 second
+	</div>
+	<br><br>
+	<div id="b4">
+	2.5 second
+	</div>
+
+</body>
+</html>
